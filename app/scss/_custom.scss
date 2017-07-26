@@ -1,0 +1,51 @@
+// Bootstrap overrides
+//
+
+$white:  					#fff;
+$black:  					#545B6D;
+$red:    					#F35A4B;
+$orange: 					#FF9F00;
+$yellow: 					#FAD820;
+$green:  					#5cb85c;
+$blue:   					#637DC8;
+$teal:   					#D95DB4;
+$pink:   					#D95DB4;
+$purple: 					#D95DB4;
+
+$gray-base:              	#545B6D;
+$gray-darker:            	#333842 !default
+$gray-dark:              	#545B6D !default
+$gray:                   	#ABAEB4;
+$gray-light:             	#EDEDED !default 
+$gray-lighter:           	#F3F3F3 !default
+
+$brand-primary:         	#637DC8 !default
+$brand-success:         	#D95DB4 !default
+$brand-info:            	#637DC8 !default
+$brand-warning:         	#FF9F00 !default
+$brand-danger:          	#F35A4B !default
+$brand-inverse:         	$gray-dark;
+
+$enable-flex:				true; 
+
+//== Typography
+
+$font-family-serif:  		serif;
+$font-family-sans-serif:  	Varela, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-base:        	$font-family-sans-serif;
+$headings-font-family:    	'Varela Round', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+$font-size-base: 			1.2rem; 
+$headings-font-weight:    	normal;
+
+$line-height-base:        	1.45;
+
+$text-muted:				$gray-light;
+
+$border-radius:				.3em;
+
+$body-bg:       			white;
+
+$jumbotron-bg:              white;
+
+$grid-gutter-width-base:    60px;

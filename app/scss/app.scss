@@ -1,0 +1,116 @@
+@import './bootstrap';
+@import './icomoon';
+
+p {
+	color: $gray;
+}
+
+h2 {
+	text-align: center;
+	color: $gray;
+	margin-bottom: 1.5em;
+	font-size: 2em;
+}
+
+.logo {
+	width: 220px;
+	margin-bottom: .75em;
+}
+
+#intro {
+	margin-bottom: 4.5em;
+
+	.header-img {
+		margin-bottom: 2.5em;
+	}
+
+	h2 {
+		color: $gray;
+	}
+}
+
+#tour {
+	.row {
+		margin-bottom: 4.5em;
+	}
+
+	h3 {
+		padding-top: 1em;
+		margin-bottom: .75em;
+	}
+}
+
+#download {
+	background-color: rgb(246, 246, 246);
+	margin: 2.5em 0;
+	padding: 3em 0;
+}
+
+#stapvoorstap {
+	.step { margin-bottom: 1em; display: inline-block; }
+	padding-bottom: 3em;
+	margin-bottom: 3em;
+	border-bottom: 1px solid $gray-light;
+}
+
+#partners {
+	margin-bottom: 5em;
+	h2 { margin-bottom: .75em; }
+	img {
+		width: 120px;
+	}
+
+	a {
+		display: inline-block;
+		padding: 0 .25em;
+		opacity: .75;
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+}
+
+#team, #adviseurs {
+	margin-bottom: 3em;
+	padding-bottom: 3em;
+	border-bottom: 1px solid $gray-light;
+
+	a:hover { text-decoration: none; }
+
+	img { max-width: 75px; }
+	.card-title { margin-top: 1em;}
+	.card { height: 100%; }
+	.row { margin-bottom: 2em;}
+	.person { margin-bottom: 1.5em;}
+}
+
+#footer {
+	background: white;
+	box-shadow: 0px 0px 16px 0px rgba(84, 91, 110, 0.40);
+
+	input {
+		font-size: 1.1em;
+		font-family: $font-family-sans-serif;
+	}
+
+	#mc_embed_signup_scroll { text-align: center; }
+
+	div.mce_inline_error { display: none !important; }
+
+	.form-inline { display: block; }
+
+	form {
+		font-size: .75em;
+		padding: .5em;
+	}
+	.mc-field-group {
+		display: inline-block;
+	}
+
+	::-webkit-input-placeholder { color: $gray; }
+	:-ms-input-placeholder { color: $gray; }
+	::-moz-placeholder { color: $gray; opacity: 1; }
+	:-moz-placeholder { color: $gray; opacity: 1; }
+
+}
