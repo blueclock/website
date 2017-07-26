@@ -2,19 +2,28 @@ language: node_js
 node_js:
 - '6.11'
 sudo: false
+addons:
+  ssh_known_hosts: 146.185.145.169
 cache:
   directories:
   - node_modules
+before_install:
+- openssl aes-256-cbc -K $encrypted_62364ec7289b_key -iv $encrypted_62364ec7289b_iv
+  -in ci/deploy_rsa.enc -out ci/deploy_rsa -d
 install:
 - npm install
 script:
 - npm run build
+deploy:
+  provider: script
+  skip_cleanup: true
+  script: rsync -rtgoP --quiet $TRAVIS_BUILD_DIR/ ci@146.185.145.169:$BUILD_PATH
+  on:
+    branch: master
+after_deploy: ssh-agent -k
 notifications:
   email:
     on_failure: always
 branches:
   only:
   - master
-before_install:
-- openssl aes-256-cbc -K $encrypted_62364ec7289b_key -iv $encrypted_62364ec7289b_iv
-  -in deploy_rsa.enc -out ci/deploy_rsa -d
