@@ -1,17 +1,20 @@
 language: node_js
 node_js:
-  - "6.11"
+- '6.11'
 sudo: false
 cache:
   directories:
-    - node_modules
+  - node_modules
 install:
-  - npm install
+- npm install
 script:
-  - npm run build
+- npm run build
 notifications:
   email:
     on_failure: always
 branches:
   only:
   - master
+before_install:
+- openssl aes-256-cbc -K $encrypted_62364ec7289b_key -iv $encrypted_62364ec7289b_iv
+  -in deploy_rsa.enc -out ci/deploy_rsa -d
